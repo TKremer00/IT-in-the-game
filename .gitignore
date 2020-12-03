@@ -61,3 +61,4 @@ crashlytics-build.properties
 # Custom
 UserSettings/
 .vscode/settings.json
+UserSettings/EditorUserSettings.asset
