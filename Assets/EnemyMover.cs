@@ -29,7 +29,9 @@ public class EnemyMover : MonoBehaviour
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position,target,step);
-        transform.LookAt(this.target);
+        // Let enemy look at target
+        Quaternion targetRotation = Quaternion.LookRotation( target );
+        transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, Time.deltaTime);
     }
     
     // The destory the enemy
