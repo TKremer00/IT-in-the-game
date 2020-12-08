@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManagerControler : MonoBehaviour
 {
-
-    float money = 0.0f;
-
+    public float money = 0.0f;
+    public float health = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +16,21 @@ public class GameManagerControler : MonoBehaviour
     {
         
     }
-    void SetMoney (float money) {
+
+    public void SetMoney(float money) {
+        // Update ui here
         this.money = money;
     }
     
-    float GetMoney () {
+    public float GetMoney() {
         return money;
+    }
+
+    public void TakeDamage(float damage){
+        health -= damage;
+    }
+    
+    public float GetHealth() {
+        return health;
     }
 }
