@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
@@ -14,9 +12,9 @@ public class EnemyMover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()   
     {
-        if(transform.position != target.position){
+        if(Vector3.Distance(transform.position,target.position) > 1.0f){
             MoveToVector(target.position);
         }else {
             // Enemy is at the target
@@ -35,7 +33,7 @@ public class EnemyMover : MonoBehaviour
     }
     
     // The destory the enemy
-    void Die()
+    private void Die()
     {
         Destroy(gameObject);
     }
