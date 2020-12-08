@@ -17,20 +17,25 @@ public class GameManagerControler : MonoBehaviour
         
     }
 
-    public void SetMoney(float money) {
+    public void SetMoney(float money) 
+    {
         // Update ui here
         this.money = money;
     }
     
-    public float GetMoney() {
+    public float GetMoney() 
+    {
         return money;
     }
 
-    public void TakeDamage(float damage){
+    public void TakeDamage(float damage)
+    {
         health -= damage;
+        // Update ui here
     }
     
-    public float GetHealth() {
+    public float GetHealth() 
+    {
         return health;
     }
 }
