@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-public class EnemyMover : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public Transform target; // The end position to walk to
+    public GameManagerControler gameManagerControler;
     public float speed = 1f;
+
+    public float worth = 1f; // the amount of money to add or remove
     
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,12 @@ public class EnemyMover : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation( target );
         targetRotation.x = 0;
         transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, Time.deltaTime);
+    }
+
+    // add the money to the users account
+    private void giveUserMoney()
+    {
+        gameManagerControler.addMoney(worth);
     }
     
     // The destory the enemy

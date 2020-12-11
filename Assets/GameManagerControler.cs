@@ -7,10 +7,16 @@ public class GameManagerControler : MonoBehaviour
 
     public GameObject selectedTurret;
 
-    public void SetMoney(float money) 
+    public void addMoney(float addition) 
     {
         // Update ui here
-        this.money = money;
+        this.money += addition;
+    }
+
+    public void removeMoney(float subtraction) 
+    {
+        // Update ui here
+        this.money -= subtraction;
     }
     
     public float GetMoney() 

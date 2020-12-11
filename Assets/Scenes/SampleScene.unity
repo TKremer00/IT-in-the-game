@@ -788,7 +788,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &759902017
 GameObject:
@@ -854,7 +854,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &798940706
 PrefabInstance:
@@ -998,7 +998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044355092
 GameObject:
@@ -1245,7 +1245,7 @@ Transform:
   - {fileID: 297830754}
   - {fileID: 1477553398}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623610494
 GameObject:
@@ -1341,7 +1341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1651148201 stripped
 Transform:
@@ -1441,7 +1441,7 @@ RectTransform:
   m_Children:
   - {fileID: 541405941}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1793,21 +1793,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2482135358183760926, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+      propertyPath: m_Name
+      value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 2482135358183760927, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2482135358183760927, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.584
+      objectReference: {fileID: 0}
     - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
+      propertyPath: worth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1518987589}
+    - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
+      propertyPath: gameManagerControler
+      value: 
+      objectReference: {fileID: 1044355093}
     - target: {fileID: 8337526895357823659, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: 
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8337526895357823659, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8337526895357823659, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1853,18 +1873,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2482135358183760926, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_Name
-      value: Turret
-      objectReference: {fileID: 0}
-    - target: {fileID: 2482135358183760927, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2482135358183760927, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.584
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
 --- !u!1001 &8990322219266047377
@@ -1884,7 +1892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990322218016609492, guid: aaff9d1d0f055164d9a22000b0d76f8e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8990322218016609492, guid: aaff9d1d0f055164d9a22000b0d76f8e, type: 3}
       propertyPath: m_LocalPosition.x
