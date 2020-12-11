@@ -5,17 +5,7 @@ public class GameManagerControler : MonoBehaviour
     public float money = 0.0f;
     public float health = 1f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject selectedTurret;
 
     public void SetMoney(float money) 
     {
@@ -37,5 +27,17 @@ public class GameManagerControler : MonoBehaviour
     public float GetHealth() 
     {
         return health;
+    }
+
+    public GameObject getSelectedTurret(){
+        return selectedTurret;
+    }
+
+    public void setSelectedTurret(GameObject turret){
+        selectedTurret = turret;
+    }
+
+    public void removeSelectedTurret(){
+        selectedTurret = null;
     }
 }
