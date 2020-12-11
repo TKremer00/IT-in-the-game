@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6216869764086937449, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+      propertyPath: range
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7214502333568836017, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
       propertyPath: m_Name
       value: TurretBase
