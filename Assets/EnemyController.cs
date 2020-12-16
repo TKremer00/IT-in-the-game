@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
             MoveToVector(target.position);
         }else {
             //take damage
-            gameManagerControler.TakeDamage(enemyStrength);
+            gameManagerControler.TakeDamage(enemyStrenght);
             // Enemy is at the target
             Die();
         }
