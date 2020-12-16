@@ -14,4 +14,4 @@ public class Shop : MonoBehaviour{
 
 }
 
-//btw je mag de layout wel veranderen, heb allen de ui zo gemaakt om de buttons te maken
+//TODO: je mag de layout wel veranderen, heb allen de ui zo gemaakt om de buttons te maken
