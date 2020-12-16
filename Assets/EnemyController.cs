@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour
     public Transform target; // The end position to walk to
     public GameManagerControler gameManagerControler;
     public float speed = 1f;
-
+    public float enemyStrenght = 1f;
     public float worth = 1f; // the amount of money to add or remove
     
     // Start is called before the first frame update
@@ -20,6 +20,8 @@ public class EnemyController : MonoBehaviour
         if(Vector3.Distance(transform.position,target.position) > 1.0f){
             MoveToVector(target.position);
         }else {
+            //take damage
+            gameManagerControler.TakeDamage(enemyStrenght);
             // Enemy is at the target
             Die();
         }
