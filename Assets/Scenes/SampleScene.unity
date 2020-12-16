@@ -449,21 +449,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2482135359043247943, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3601796448476179169, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6216869764086937449, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: range
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7214502333568836017, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
-      propertyPath: m_Name
-      value: TurretBase
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
