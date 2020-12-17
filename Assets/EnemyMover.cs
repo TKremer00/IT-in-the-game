@@ -4,6 +4,7 @@ public class EnemyMover : MonoBehaviour
 {
     public Transform target; // The end position to walk to
     public float speed = 1f;
+    public int health = 1;
     
     // Start is called before the first frame update
     void Start()
