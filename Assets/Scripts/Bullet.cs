@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
+        EnemyMover.health--;
         Destroy(gameObject);
     }
 }
