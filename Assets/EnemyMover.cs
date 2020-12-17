@@ -21,6 +21,11 @@ public class EnemyMover : MonoBehaviour
             // Enemy is at the target
             Die();
         }
+
+        if(health <= 0)
+        {
+            Die;
+        }
     }
 
     // Let the enemy walk towards a target
