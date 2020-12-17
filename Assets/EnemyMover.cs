@@ -24,7 +24,7 @@ public class EnemyMover : MonoBehaviour
 
         if(health <= 0)
         {
-            Die;
+            Die();
         }
     }
 
