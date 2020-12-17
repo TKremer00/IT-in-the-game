@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Turret : MonoBehaviour
 {
-    private GameObject target;
+    private Transform target;
 
     [Header("Attributes")]
     public float range = 3f;
@@ -48,7 +49,7 @@ public class Turret : MonoBehaviour
 
         if (nearestEnemy != null && shortestDistance <= range)
         {
-            target = nearestEnemy.transform.position;
+            target = nearestEnemy.transform;
        } else
        {
            target = null;
