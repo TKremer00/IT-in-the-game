@@ -6,6 +6,7 @@ public class GameManagerControler : MonoBehaviour
     public float health = 1f;
 
     public GameObject selectedTurret;
+    public GameObject[] allTurrets;
 
     public void addMoney(float addition) 
     {
@@ -45,5 +46,9 @@ public class GameManagerControler : MonoBehaviour
 
     public void removeSelectedTurret(){
         selectedTurret = null;
+    }
+
+    public GameObject[] getAllTurrets(){
+        return allTurrets;
     }
 }
