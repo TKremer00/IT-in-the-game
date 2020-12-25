@@ -53,9 +53,9 @@ public class EnemyController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position,target,step);
         // Let enemy look at target
         
-        // Quaternion targetRotation = Quaternion.LookRotation( target );
-        // targetRotation.x = 0;
-        // transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, Time.deltaTime);
+        Quaternion targetRotation = Quaternion.LookRotation( target );
+        targetRotation.x = 0;
+        transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, Time.deltaTime);
     }
 
     // add the money to the users account
