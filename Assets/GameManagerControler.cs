@@ -7,6 +7,8 @@ public class GameManagerControler : MonoBehaviour
 
     public GameObject selectedTurret;
 
+    public GameObject path;
+
     public void addMoney(float addition) 
     {
         // Update ui here
@@ -45,5 +47,9 @@ public class GameManagerControler : MonoBehaviour
 
     public void removeSelectedTurret(){
         selectedTurret = null;
+    }
+
+    public GameObject getPath(){
+        return path;
     }
 }

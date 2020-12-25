@@ -1980,6 +1980,7 @@ MonoBehaviour:
   money: 0
   health: 1
   selectedTurret: {fileID: 2482135358183760926, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+  path: {fileID: 8141740097336110788, guid: 3fb644b9676b3344791ac68cb3a6686b, type: 3}
 --- !u!4 &1044355094
 Transform:
   m_ObjectHideFlags: 0
@@ -3366,6 +3367,10 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
+      propertyPath: path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
@@ -3373,6 +3378,10 @@ PrefabInstance:
       propertyPath: worth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
+      propertyPath: castle
+      value: 
+      objectReference: {fileID: 1518987589}
     - target: {fileID: 8337526895357823658, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
       propertyPath: target
       value: 
