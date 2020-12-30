@@ -12,6 +12,7 @@ public class Shop : MonoBehaviour{
         for (int i = 0; i < allTurrets.Length; i++)
         {
             GameObject newButton = Instantiate(button,transform.position,transform.rotation);
+            Debug.Log("Test button");
             newButton.transform.parent = gameObject.transform;
             TurretBuy turretBuy = newButton.GetComponentInChildren<TurretBuy>();
             turretBuy.turret=allTurrets[i];

@@ -11,6 +11,7 @@ public class TurretBuy : MonoBehaviour
         gameManagerControler = GameObject.FindObjectOfType<GameManagerControler> ().GetComponent<GameManagerControler> ();
         Debug.Log(GameObject.FindObjectOfType<GameManagerControler> ());
     } 
+
     public void PurchaseStandardTurret (){
         if(gameManagerControler.GetMoney() >= price && gameManagerControler.getSelectedTurret() == null){
             Debug.Log("standard turret purchased");
