@@ -21,8 +21,7 @@ public class TurretBuy : MonoBehaviour
             Debug.Log("you can't buy this turret");
         }
     }
-        public void PurchaseStandardTurret2 (){
-            Debug.Log("yass");
-        }
+    public void PurchaseStandardTurret2 (){
+        Debug.Log("yass");
     }
 }
