@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour
 {
     private List<Transform> pathPoints;
     private Transform target; // The current target we are walking towards
-    public Transform castle;
+    private Transform castle;
     public GameManagerControler gameManagerControler;
     public float speed = 1f;
     public float enemyStrenght = 1f;
@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        castle = GameObject.Find("Castle").transform;
+
         pathPoints = new List<Transform>();
         // add points
         pathPoints.AddRange(gameManagerControler.getPath().GetComponentsInChildren<Transform>());
@@ -21,6 +23,7 @@ public class EnemyController : MonoBehaviour
         pathPoints.RemoveAt(0);
 
         target = pathPoints[0];
+        Debug.Log("Catle position " + castle.transform.position);
     }
 
     // Update is called once per frame
