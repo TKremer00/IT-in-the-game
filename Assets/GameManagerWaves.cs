@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManagerWaves : MonoBehaviour
 {
-    public Transform enemyPrefab;
+    public GameObject enemyPrefab;
 
     public Transform spawnPoint;
 
@@ -38,7 +38,9 @@ public class GameManagerWaves : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        EnemyController enemyController = enemy.GetComponent<EnemyController>();
+        enemyController.gameManagerControler = gameObject.GetComponent<GameManagerControler>();
     }
 
 }
