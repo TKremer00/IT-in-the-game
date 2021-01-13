@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu () {
         Time.timeScale = 1f;
         Debug.Log("Loading menu...");
-        //SceneManager.LoadScene ("a TBD menu") (Only enable if there is a menu)
+        SceneManager.LoadScene (0);
     }
 
     //lets the user quit the game (don't know if nessecary)
