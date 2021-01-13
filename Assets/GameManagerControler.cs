@@ -59,6 +59,10 @@ public class GameManagerControler : MonoBehaviour
     public void removeSelectedTurret(){
         selectedTurret = null;
     }
+
+    public GameObject getPath(){
+        return path;
+    }
 }
 
 
