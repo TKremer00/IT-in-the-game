@@ -139,5 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951343f24852c17448a054f719562f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 8990322218016609492, guid: aaff9d1d0f055164d9a22000b0d76f8e, type: 3}
+  castle: {fileID: 5456664696727506292, guid: 51bf451851973104d89c1cfefc8cab1f, type: 3}
+  gameManagerControler: {fileID: 0}
   speed: 1
+  enemyStrenght: 1
+  worth: 1
