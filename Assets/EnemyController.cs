@@ -23,7 +23,6 @@ public class EnemyController : MonoBehaviour
         pathPoints.RemoveAt(0);
 
         target = pathPoints[0];
-        Debug.Log("Catle position " + castle.transform.position);
     }
 
     // Update is called once per frame
