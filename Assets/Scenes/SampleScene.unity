@@ -3506,9 +3506,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castel
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 8990322218016609493, guid: aaff9d1d0f055164d9a22000b0d76f8e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+=======
+>>>>>>> ba80bc6f2c596149c1cbc1779f4d73fe511295d8
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaff9d1d0f055164d9a22000b0d76f8e, type: 3}
