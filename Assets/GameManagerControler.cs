@@ -12,6 +12,8 @@ public class GameManagerControler : MonoBehaviour
    
     public GameObject selectedTurret;
 
+    public GameObject path;
+
     void Start() {
         moneyText.SetText(money.ToString());
         healthText.SetText(health.ToString());
