@@ -38,7 +38,9 @@ public class EnemyController : MonoBehaviour
                 target = pathPoints[0];
             }
             
-        } else if(Vector3.Distance(transform.position,castle.position) < 1.0f) {
+        } else if(Vector3.Distance(transform.position,castle.position) > 1.0f) {
+            MoveToVector(target.position);
+        }else {
             //take damage
             gameManagerControler.TakeDamage(enemyStrenght);
             // Enemy is at the target

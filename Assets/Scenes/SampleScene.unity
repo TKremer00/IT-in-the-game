@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 278370264}
   - component: {fileID: 278370263}
   - component: {fileID: 278370262}
+  - component: {fileID: 278370265}
   m_Layer: 5
   m_Name: BuildButton
   m_TagString: Untagged
@@ -786,6 +787,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278370260}
   m_CullTransparentMesh: 0
+--- !u!114 &278370265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278370260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da77db29a782eea408def2f5712a5b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManagerControler: {fileID: 1044355093}
+  button: {fileID: 2486792923007964045, guid: 7b734298e83f85b49948ca1678b68f63, type: 3}
 --- !u!1001 &317629503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2572,6 +2587,8 @@ MonoBehaviour:
   moneyText: {fileID: 524984387}
   healthText: {fileID: 817793030}
   selectedTurret: {fileID: 2482135358183760926, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
+  allTurrets:
+  - {fileID: 2482135358183760926, guid: 22ab9f9010e78184a8485c28eb36aab2, type: 3}
   path: {fileID: 8141740097336110788, guid: 3fb644b9676b3344791ac68cb3a6686b, type: 3}
 --- !u!4 &1044355094
 Transform:
@@ -2706,7 +2723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 873020216005588983, guid: dd60cb863ed944a40bff14a6d64da24b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 873020216005588983, guid: dd60cb863ed944a40bff14a6d64da24b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3140,17 +3157,17 @@ Transform:
   m_Children:
   - {fileID: 1651148201}
   - {fileID: 1797746177}
-  - {fileID: 47466786}
   - {fileID: 1222474996}
   - {fileID: 519240979}
   - {fileID: 548320954}
   - {fileID: 2133157911}
   - {fileID: 1502054062}
   - {fileID: 757124570}
-  - {fileID: 388621533}
+  - {fileID: 47466786}
   - {fileID: 1156721774}
   - {fileID: 411991472}
   - {fileID: 588915016}
+  - {fileID: 388621533}
   - {fileID: 317629504}
   - {fileID: 1150270220}
   - {fileID: 2026926381}

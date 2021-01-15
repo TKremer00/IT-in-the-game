@@ -11,7 +11,7 @@ public class GameManagerControler : MonoBehaviour
     public TMP_Text healthText;
    
     public GameObject selectedTurret;
-
+    public GameObject [] allTurrets;
     public GameObject path;
 
     void Start() {
@@ -64,6 +64,10 @@ public class GameManagerControler : MonoBehaviour
 
     public GameObject getPath(){
         return path;
+    }
+    
+    public GameObject[] getAllTurrets(){
+        return allTurrets;
     }
 }
 
