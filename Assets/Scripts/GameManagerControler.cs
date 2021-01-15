@@ -14,6 +14,8 @@ public class GameManagerControler : MonoBehaviour
     public GameObject [] allTurrets;
     public GameObject path;
 
+    public int waveNumber = 1;
+
     void Start() {
         moneyText.SetText(money.ToString());
         healthText.SetText(health.ToString());
@@ -68,6 +70,11 @@ public class GameManagerControler : MonoBehaviour
     
     public GameObject[] getAllTurrets(){
         return allTurrets;
+    }
+
+    public void increaseWave(){
+        waveNumber++;
+
     }
 }
 
