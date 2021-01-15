@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     public float speed = 1f;
     public float enemyStrenght = 1f;
     public float worth = 1f; // the amount of money to add or remove
+     public int health = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,11 @@ public class EnemyController : MonoBehaviour
         }
 
         MoveToVector(target.position);
+
+        if(health <= 0)
+        {
+            Die();
+        }
     }
 
     // Let the enemy walk towards a target
