@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class GameManagerWaves : MonoBehaviour
 {
@@ -8,10 +10,17 @@ public class GameManagerWaves : MonoBehaviour
     private const float countdown = 1f;
     private float countdownRemaining = countdown;
     private GameManagerControler gameManagerControler;
+    private List<Transform> pathPoints;
 
     void Start()
     {
         gameManagerControler = gameObject.GetComponent<GameManagerControler>();
+
+                pathPoints = new List<Transform>();
+        // add points
+        pathPoints.AddRange(gameManagerControler.getPath().GetComponentsInChildren<Transform>());
+        // remove parrent
+        pathPoints.RemoveAt(0);
     }
 
     void Update ()
@@ -34,11 +43,12 @@ public class GameManagerWaves : MonoBehaviour
             if(wave.spawned < wave.amount){
                 // spawn enemy 
                 wave.spawned++;
-                GameObject enemy = Instantiate(wave.enemy, spawnPoint.position, spawnPoint.rotation);
+                var lookRotation = Quaternion.LookRotation((pathPoints[0].position - spawnPoint.position).normalized);
+                GameObject enemy = Instantiate(wave.enemy, spawnPoint.position, lookRotation);
                 EnemyController enemyController = enemy.GetComponent<EnemyController>();
+                enemyController.pathPoints = pathPoints.ToList();
                 enemyController.gameManagerControler = gameObject.GetComponent<GameManagerControler>();
                 didSpawn = true;
-                Debug.Log("Spawned " + wave.enemy.name);
                 break;
             }
         }
@@ -48,11 +58,9 @@ public class GameManagerWaves : MonoBehaviour
             
             if(count == 0){
                 // make next wave
-                Debug.Log("Wave over");
                 foreach (var wave in waves) {
                     float nAmount = wave.amount * 1.5f;
                     wave.amount = (int)nAmount;
-                    Debug.Log("New amount " + wave.amount);
                     wave.spawned = 0;    
                 }
                 

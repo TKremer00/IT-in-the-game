@@ -3,27 +3,22 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private List<Transform> pathPoints;
+    [System.NonSerialized]
+    public List<Transform> pathPoints;
     private Transform target; // The current target we are walking towards
     private Transform castle;
     public GameManagerControler gameManagerControler;
     public float speed = 1f;
     public float enemyStrenght = 1f;
     public float worth = 1f; // the amount of money to add or remove
-     public int health = 1;
+    public int health = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         castle = GameObject.Find("Castle").transform;
-
-        pathPoints = new List<Transform>();
-        // add points
-        pathPoints.AddRange(gameManagerControler.getPath().GetComponentsInChildren<Transform>());
-        // remove parrent
-        pathPoints.RemoveAt(0);
-
         target = pathPoints[0];
+
     }
 
     // Update is called once per frame
@@ -63,9 +58,11 @@ public class EnemyController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position,target,step);
         // Let enemy look at target
         
-        Quaternion targetRotation = Quaternion.LookRotation( target );
-        targetRotation.x = 0;
-        transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, Time.deltaTime);
+        var lookRotation = Quaternion.LookRotation((target - transform.position).normalized);
+        lookRotation.x = 0;
+        lookRotation.z = 0;
+        var rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 1.5f);
+        transform.rotation = rotation;
     }
 
     // add the money to the users account
