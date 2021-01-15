@@ -1,17 +1,22 @@
-﻿
-using System.Collections.Generic;
-using UnityEngine;
+﻿ using UnityEngine;
 
 public class Shop : MonoBehaviour{
-    public void PurchaseStandardTurret () {
-        Debug.Log("standard Turret Purchased");
+
+    public GameManagerControler gameManagerControler;
+    public GameObject button;
+
+    public void Start (){
+        Debug.Log("test");
+        GameObject[] allTurrets = gameManagerControler.getAllTurrets();
+        for (int i = 0; i < allTurrets.Length; i++)
+        {
+            GameObject newButton = Instantiate(button,transform.position,transform.rotation);
+            Debug.Log("Test button");
+            newButton.transform.parent = gameObject.transform;
+            TurretBuy turretBuy = newButton.GetComponentInChildren<TurretBuy>();
+            turretBuy.turret=allTurrets[i];
+            //TODO: change this to the price of the turret
+            turretBuy.price = 1f;
+        }
     }
-
-        public void PurchaseOtherTurret () {
-        Debug.Log("Other Turret Purchased");
-    }
-
-
 }
-
-//TODO: je mag de layout wel veranderen, heb allen de ui zo gemaakt om de buttons te maken
