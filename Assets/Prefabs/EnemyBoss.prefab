@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManagerControler: {fileID: 0}
-  speed: 1
-  enemyStrenght: 1
-  worth: 1
-  health: 1
+  speed: 0.5
+  enemyStrenght: 3
+  worth: 5
+  health: 50
 --- !u!1001 &4601249760594074980
 PrefabInstance:
   m_ObjectHideFlags: 0

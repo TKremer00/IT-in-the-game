@@ -16,7 +16,7 @@ public class Shop : MonoBehaviour{
             TurretBuy turretBuy = newButton.GetComponentInChildren<TurretBuy>();
             turretBuy.turret=allTurrets[i];
             //TODO: change this to the price of the turret
-            turretBuy.price = 1f;
+            turretBuy.price = allTurrets[i].GetComponent<Turret>().price;
         }
     }
 }

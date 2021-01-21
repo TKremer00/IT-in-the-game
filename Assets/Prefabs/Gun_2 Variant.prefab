@@ -19,6 +19,7 @@ MonoBehaviour:
   turnSpeed: 10
   bulletPrefab: {fileID: 6627306839279256107, guid: 67cd72eef334363449919e3ef735e2fa, type: 3}
   firePoint: {fileID: 2585191891295068447}
+  price: 15
 --- !u!1 &7988921659860417193
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +64,18 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 16d680e182214dc499e37615d29c06b0, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 16d680e182214dc499e37615d29c06b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 16d680e182214dc499e37615d29c06b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 16d680e182214dc499e37615d29c06b0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 16d680e182214dc499e37615d29c06b0, type: 3}
       propertyPath: m_LocalPosition.x

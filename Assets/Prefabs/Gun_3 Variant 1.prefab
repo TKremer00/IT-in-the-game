@@ -43,12 +43,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
-  fireRate: 0.01
+  fireRate: 0.005
   enemyTag: Enemy
   partToRotate: {fileID: 8287664613057604249}
   turnSpeed: 10
   bulletPrefab: {fileID: 6627306839279256107, guid: 67cd72eef334363449919e3ef735e2fa, type: 3}
   firePoint: {fileID: 7621647498737558019}
+  price: 10
 --- !u!1001 &8287664613057212443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,6 +64,18 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54593c27ebab7214ba4a6b02aaacb84d, type: 3}
       propertyPath: m_LocalPosition.x

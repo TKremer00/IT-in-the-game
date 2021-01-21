@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cebc9bb985d30704b890fde961be4bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1
-  health: 1
+  money: 10
+  health: 100
   moneyText: {fileID: 524984387}
   healthText: {fileID: 817793030}
   selectedTurret: {fileID: 0}
@@ -2743,7 +2743,7 @@ MonoBehaviour:
   - enemy: {fileID: 8337526895357823669, guid: e7b1910e3cd81414f9b2f5f02b274abd, type: 3}
     amount: 5
   spawnPoint: {fileID: 4256561579236392860, guid: f454406634287d141a0cb252482a697d, type: 3}
-  timeBetweenWaves: 30
+  timeBetweenWaves: 15
 --- !u!1001 &1150270219
 PrefabInstance:
   m_ObjectHideFlags: 0
