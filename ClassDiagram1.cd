@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameManagerControler">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAgAACAAAEAAAAIDAAJAIIAAAABAAAEhgCAAMAg=</HashCode>
+      <FileName>Assets\Scripts\GameManagerControler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet">
+    <Position X="12" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAKAAAAAAAAAAAAQAAAAAAAEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyController">
+    <Position X="5.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAIAAkIAAIAAAAAAAAAQCEAAIAAAAAAQg=</HashCode>
+      <FileName>Assets\Scripts\EnemyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyWave">
+    <Position X="5.75" Y="4.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\EnemyWave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManagerWaves">
+    <Position X="3" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAACAAABAAAAAAAAAQAAAAAACAAAJAAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerWaves.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="0.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu">
+    <Position X="12" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABQgAAAAAAAAAAAAAAAAAIAAAAAAgAAgAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SettingsMenu">
+    <Position X="9" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAABAgAAAAABAACAAIAAAASAAAA=</HashCode>
+      <FileName>Assets\Scripts\SettingsMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop">
+    <Position X="9" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Turret">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAUAAAAIACIABIAAIAAACAAAAAAAAAAAAgAgAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Turret.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TurretPlacer">
+    <Position X="5.75" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\TurretPlacer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TurretBuy">
+    <Position X="9" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAACAAAAAQAAAAAAQAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\TurretBuy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
