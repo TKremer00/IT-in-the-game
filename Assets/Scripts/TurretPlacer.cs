@@ -9,7 +9,7 @@ public class TurretPlacer : MonoBehaviour
         // check if there is a turret
         if(gameManagerControler.selectedTurret != null){
             // add the turret to the screen and delete the placement
-            Instantiate(gameManagerControler.selectedTurret,transform.position,transform.rotation);
+            Instantiate(gameManagerControler.selectedTurret,transform.position,Quaternion.identity);
             gameManagerControler.setSelectedTurret(null);
             Destroy(gameObject);
         }

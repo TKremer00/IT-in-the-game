@@ -9,8 +9,8 @@ public class Turret : MonoBehaviour
 
     [Header("Attributes")]
     public float range = 3f;
-    public float fireRate = 1f;
-    private float fireCountdown = 0f;
+    public float fireRate = 0.001f;
+    private float fireCountdown = 1f;
 
     [Header("Unity Setup Fields")]
 
@@ -64,17 +64,16 @@ public class Turret : MonoBehaviour
             return;
         }
            
-       
-
        Vector3 dir = target.transform.position - transform.position;
        Quaternion lookRotation = Quaternion.LookRotation(dir);
        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-       partToRotate.rotation = Quaternion.Euler (0f, rotation.y, 0f);
+       partToRotate.rotation = Quaternion.Euler (-90f, rotation.y, 0f);
 
+       fireCountdown = fireCountdown-fireRate;
        if (fireCountdown <= 0f)
        {
            Shoot();
-           fireCountdown = 1f / fireRate;
+           fireCountdown = fireCountdown+1f;
        }
     }
 
