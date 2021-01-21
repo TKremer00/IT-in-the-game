@@ -9,6 +9,8 @@ public class GameManagerControler : MonoBehaviour
     public float health = 1f;
     public TMP_Text moneyText;
     public TMP_Text healthText;
+
+    public TMP_Text waveText;
    
     public GameObject selectedTurret;
     public GameObject [] allTurrets;
@@ -74,6 +76,7 @@ public class GameManagerControler : MonoBehaviour
 
     public void increaseWave(){
         waveNumber++;
+        waveText.text = waveNumber.ToString();
 
     }
 }

@@ -7,6 +7,8 @@ public class TurretBuy : MonoBehaviour
     public GameManagerControler gameManagerControler;
     public float price;
 
+    public Text text;
+
     public void Start(){
         gameManagerControler = GameObject.FindObjectOfType<GameManagerControler> ().GetComponent<GameManagerControler> ();
         Debug.Log(GameObject.FindObjectOfType<GameManagerControler> ());
@@ -23,5 +25,9 @@ public class TurretBuy : MonoBehaviour
     }
     public void PurchaseStandardTurret2 (){
         Debug.Log("yass");
+    }
+
+    public void setText(string turretText){
+        text.text = turretText;
     }
 }
