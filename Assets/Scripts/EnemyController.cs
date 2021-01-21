@@ -70,6 +70,14 @@ public class EnemyController : MonoBehaviour
     {
         gameManagerControler.addMoney(worth);
     }
+
+    public void TakeDamage(int damage){
+        health -= damage;
+        if(health <= 0){
+            giveUserMoney();
+            Die();
+        }
+    }
     
     // The destory the enemy
     private void Die()

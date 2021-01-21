@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 
     public float speed = 70f;
 
+    public int damage = 1;
+
     public void Seek (GameObject _target)
     {
         target = _target;
@@ -36,6 +38,6 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        target.GetComponent<EnemyController>().health--;
+        target.GetComponent<EnemyController>().TakeDamage(damage);
     }
 }
